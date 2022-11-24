@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:orientation="vertical"
+    tools:context=".Pantalla_Informativa">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Higiene del Sueño"
+        android:textAlignment="center"
+        android:textColor="#0E1C6A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Conjunto de actitudes y hábitos que nos permite conciliar adecuadamente el sueño para poder dormir profundamente"
+        android:textAlignment="center"
+        android:textColor="#0E1C6A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="90dp"
+        android:max="100"
+        android:progressDrawable="@drawable/custom_progress" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/icon_cat" />
+
+</LinearLayout>

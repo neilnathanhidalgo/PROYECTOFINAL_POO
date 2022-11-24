@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormularioProceso">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/icon_home"
+            android:backgroundTint="#0E1C6A"
+            android:onClick="home" />
+
+        <ImageView
+            android:id="@+id/ivFacultad"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="210dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtSigla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="FCLT"
+            android:textAllCaps="false"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtIndicaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="Elija la alternativa que mejor describa sus habitos de sueño"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0E1C6A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="499dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_fp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPregunta"
+                android:layout_width="265dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:minHeight="30dp"
+                android:text="En las noches me acuesto (o voy a la cama) a diferentes horas"
+                android:textAlignment="center"
+                android:textColor="#221E1E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rbgAlternativas"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:layout_gravity="center">
+
+            <RadioButton
+
+                android:id="@+id/rbO1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#0E1C6A"
+                android:buttonTint="#0E1C6A"
+                android:checked="false"
+                android:text="Siempre"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbO2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#0E1C6A"
+                android:buttonTint="#0E1C6A"
+                android:text="Frecuentemente"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbO3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#0E1C6A"
+                android:buttonTint="#0E1C6A"
+                android:text="A veces"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbO4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#0E1C6A"
+                android:buttonTint="#0E1C6A"
+                android:text="Raras veces"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbO5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#0E1C6A"
+                android:buttonTint="#0E1C6A"
+                android:text="Nunca"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAtras"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_back"
+            android:backgroundTint="#0E1C6A"
+            android:gravity="clip_horizontal|center_vertical"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtPreguntas"
+            android:layout_width="144dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:elevation="1dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="1 de 10"
+            android:textColor="#0E1C6A"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:background="@drawable/icon_next"
+            android:backgroundTint="#0E1C6A"
+            android:clickable="false"
+            android:onClick="seguirProceso"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

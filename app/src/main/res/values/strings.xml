@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Cuestionario IHS</string>
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="facultad">
+        <item>Ingeniería y Arquitectura</item>
+        <item>Derecho</item>
+        <item>Comunicaciones y Peridismo</item>
+        <item>Historia y Gestión Cultural</item>
+        <item>Ciencias Económicas y Empresariales</item>
+        <item>Educación</item>
+    </string-array>
+
+    <string-array name="tipoPersona">
+        <item>Administrativo</item>
+        <item>Docente</item>
+        <item>Alumnno</item>
+    </string-array>
+</resources>
